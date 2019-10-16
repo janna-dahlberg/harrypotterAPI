@@ -3,6 +3,11 @@
   src: url(../fonts/ParryHotter.ttf);
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 .hidden {
   display: none;
 }
@@ -11,11 +16,8 @@ body {
   background-image: url("img/3d3be8ed34a56a2f8dc664fe4fb538a9.jpg");
   background-size: auto 100%;
   background-repeat: no-repeat;
-}
-
-html {
-  font-size: 18px;
   font-family: potter;
+  font-size: 18px;
 }
 
 .wrapper {
@@ -27,27 +29,31 @@ ul {
   list-style-type: none;
 }
 
+h1.mainheading {
+  margin: 0;
+  padding: 0;
+}
 h1 {
   text-align: center;
   color: white;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 p.name {
   color: white;
   line-height: 20px;
   font-size: 1.5rem;
+  margin-top: 20px;
 }
 p.student-info {
-  font-size: 2rem;
   color: white;
-  padding-left: 20px;
-  padding-top: 40px;
   text-align: center;
+  font-size: 1.7rem;
 }
 
 .info {
-  margin-top: 20px;
   background-color: rgba(151, 55, 55, 0.753);
   height: 500px;
   width: 400px;

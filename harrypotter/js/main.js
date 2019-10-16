@@ -10,7 +10,7 @@ async function render() {
   let list = await getData();
   let ul = document.querySelector("ul");
   let itemHidden = document.querySelector("li.hidden");
-  let itemHidden2 = document.querySelector("img.hidden2");
+
   for (let item of list) {
     let newItem = itemHidden.cloneNode(true);
     newItem.classList.remove("hidden");
@@ -22,9 +22,18 @@ async function render() {
       sInfo.innerText = item.house;
       let sImage = document.querySelector("img");
       sImage.src = item.image;
+      let patronus = document.querySelector(".patronus");
+      patronus.innerText = item.patronus;
+
       let sbg = document.querySelector("article");
-      if (sInfo === "Gryffindor") {
-        sbg.style.backgroundColor = "red";
+      if (item.house === "Gryffindor") {
+        sbg.style.backgroundImage = "url('img/gryffindor.jpg')";
+      } else if (item.house === "Slytherin") {
+        sbg.style.backgroundImage = "url('img/slytherin.jpg')";
+      } else if (item.house === "Hufflepuff") {
+        sbg.style.backgroundImage = "url('img/hufflepuff.jpg')";
+      } else {
+        sbg.style.backgroundImage = "url('img/ravenclaw.jpg')";
       }
     });
 

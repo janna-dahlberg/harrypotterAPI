@@ -57,8 +57,14 @@ p.student-info {
   font-size: 1.7rem;
 }
 
+.patronus {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 .info {
-  background-color: rgba(151, 55, 55, 0.753);
+  /* background-color: rgba(151, 55, 55, 0.753); */
   height: 500px;
   width: 400px;
   border-radius: 10px;
@@ -74,7 +80,6 @@ img {
   width: 163px;
   height: 227px;
   border-radius: 50%;
-  border: 4px solid black;
   display: block;
   margin-left: auto;
   margin-right: auto;

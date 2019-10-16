@@ -10,7 +10,7 @@ async function render() {
   let list = await getData();
   let ul = document.querySelector("ul");
   let itemHidden = document.querySelector("li.hidden");
-
+  let itemHidden2 = document.querySelector("img.hidden2");
   for (let item of list) {
     let newItem = itemHidden.cloneNode(true);
     newItem.classList.remove("hidden");
@@ -20,6 +20,12 @@ async function render() {
       sname.innerText = item.name;
       let sInfo = document.querySelector(".student-info");
       sInfo.innerText = item.house;
+      let sImage = document.querySelector("img");
+      sImage.src = item.image;
+      let sbg = document.querySelector("article");
+      if (sInfo === "Gryffindor") {
+        sbg.style.backgroundColor = "red";
+      }
     });
 
     let p = newItem.querySelector("p");

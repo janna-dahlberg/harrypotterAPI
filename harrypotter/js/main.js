@@ -29,12 +29,12 @@ async function render() {
 
       if (item.house === "Gryffindor") {
         sbg.style.backgroundImage = "url('img/gryffindor.jpg')";
-        actor.style.color = "#a84700";
+        actor.style.color = "#ae8d11";
       } else if (item.house === "Slytherin") {
         sbg.style.backgroundImage = "url('img/slytherin.jpg')";
         actor.style.color = "#516320";
       } else if (item.house === "Hufflepuff") {
-        actor.style.color = "#303030";
+        actor.style.color = "#ae8d11";
         sbg.style.backgroundImage = "url('img/hufflepuff.jpg')";
       } else {
         sbg.style.backgroundImage = "url('img/ravenclaw.jpg')";

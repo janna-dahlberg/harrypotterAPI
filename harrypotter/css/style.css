@@ -61,7 +61,6 @@ p.student-info {
 }
 
 p.actor {
-  color: white;
   text-align: center;
   font-size: 1.5rem;
   margin-top: 0;
@@ -77,6 +76,7 @@ article {
   display: flex;
   flex-direction: column;
   align-content: space-around;
+  transition: all 1s ease;
 }
 
 img {

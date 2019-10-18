@@ -20,21 +20,25 @@ async function render() {
       sname.innerText = item.name;
       let sInfo = document.querySelector(".student-info");
       sInfo.innerText = item.house;
-      let sImage = document.querySelector("img");
+      let sImage = document.querySelector(".student-img");
       sImage.classList.remove("hidden");
       sImage.src = item.image;
       let actor = document.querySelector(".actor");
       actor.innerText = item.actor;
-
       let sbg = document.querySelector("article");
+
       if (item.house === "Gryffindor") {
         sbg.style.backgroundImage = "url('img/gryffindor.jpg')";
+        actor.style.color = "#a84700";
       } else if (item.house === "Slytherin") {
         sbg.style.backgroundImage = "url('img/slytherin.jpg')";
+        actor.style.color = "#516320";
       } else if (item.house === "Hufflepuff") {
+        actor.style.color = "#303030";
         sbg.style.backgroundImage = "url('img/hufflepuff.jpg')";
       } else {
         sbg.style.backgroundImage = "url('img/ravenclaw.jpg')";
+        actor.style.color = "#aa7f4f";
       }
     });
 

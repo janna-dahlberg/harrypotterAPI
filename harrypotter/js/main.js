@@ -21,9 +21,10 @@ async function render() {
       let sInfo = document.querySelector(".student-info");
       sInfo.innerText = item.house;
       let sImage = document.querySelector("img");
+      sImage.classList.remove("hidden");
       sImage.src = item.image;
-      let patronus = document.querySelector(".patronus");
-      patronus.innerText = item.patronus;
+      let actor = document.querySelector(".actor");
+      actor.innerText = item.actor;
 
       let sbg = document.querySelector("article");
       if (item.house === "Gryffindor") {
